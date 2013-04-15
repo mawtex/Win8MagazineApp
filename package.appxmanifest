@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="ab932777-3f00-443c-b8ba-118a729ffa00" Version="1.0.0.0" Publisher="CN=maw" />
+  <Properties>
+    <DisplayName>Danish Developer Conference</DisplayName>
+    <PublisherDisplayName>Composite A/S</PublisherDisplayName>
+    <Logo>images\logo-50-50.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="Composite C1 Magazine App" Logo="images\logo-150-150.png" SmallLogo="images\logo-30-30.png" Description="Sample Windows 8 App which present content from a Composite C1 website." ForegroundText="dark" BackgroundColor="#ffffff">
+        <DefaultTile ShowName="allLogos" WideLogo="images\logo-310-150.png" />
+        <SplashScreen Image="images\logo-620-300.png" BackgroundColor="white" />
+        <InitialRotationPreference>
+          <Rotation Preference="portrait" />
+          <Rotation Preference="landscape" />
+          <Rotation Preference="portraitFlipped" />
+          <Rotation Preference="landscapeFlipped" />
+        </InitialRotationPreference>
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.search" />
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

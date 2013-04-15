@@ -1,0 +1,101 @@
+﻿.itemdetailpage .content {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  display: block;
+  height: 100%;
+  overflow-x: auto;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+.itemdetailpage .content article {
+  /* Define a multi-column, horizontally scrolling article by default. */
+
+  column-fill: auto;
+  column-gap: 80px;
+  column-width: 480px;
+  height: calc(100% - 265px);
+  margin-left: 120px;
+  margin-top: 133px;
+  width: 480px;
+}
+.itemdetailpage .content article header .item-title {
+  margin-bottom: 19px;
+}
+.itemdetailpage .content article header .item-subtitle {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+.itemdetailpage .content article .item-image-dyke {
+  max-height: 440px;
+  overflow: hidden;
+  text-align: center;
+}
+.itemdetailpage .content article .item-image {
+  max-width: 480px;
+  max-height: 480px;
+}
+.itemdetailpage .content article .item-content h1,
+.itemdetailpage .content article .item-content h2,
+.itemdetailpage .content article .item-content h3
+ {
+  margin-top: 25px;
+}
+.itemdetailpage .content article .item-content p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.itemdetailpage .content article .item-content img {
+  max-width: 450px;
+  max-height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (-ms-view-state: snapped) {
+  .itemdetailpage .content {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .itemdetailpage .content article {
+    /* Define a single column, vertically scrolling article in snapped mode. */
+  
+    -ms-grid-columns: 300px 1fr;
+    -ms-grid-row: 2;
+    -ms-grid-rows: auto 60px;
+    display: -ms-grid;
+    height: 100%;
+    margin-left: 20px;
+    margin-top: 6px;
+    width: 300px;
+  }
+  .itemdetailpage .content article header .item-title {
+    margin-bottom: 10px;
+  }
+  .itemdetailpage .content article .item-image-dyke {
+    max-height: 400px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .itemdetailpage .content article .item-image {
+    max-width: 280px;
+  }
+  .itemdetailpage .content article .item-content {
+    padding-bottom: 60px;
+  }
+  .itemdetailpage .content article .item-content img {
+    max-width: 250px;
+    max-height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (-ms-view-state: fullscreen-portrait) {
+  .itemdetailpage .content article {
+    margin-left: 100px;
+  }
+}
