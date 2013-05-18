@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
     "use strict";
     WinJS.Binding.optimizeBindingReferences = true;
     var app = WinJS.Application;
