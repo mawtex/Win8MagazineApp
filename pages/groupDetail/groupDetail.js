@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
     "use strict";
     var appViewState = Windows.UI.ViewManagement.ApplicationViewState;
     var ui = WinJS.UI;
